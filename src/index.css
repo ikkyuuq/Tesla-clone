@@ -1,0 +1,35 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #343c13;
+}
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+@keyframes animateDown{
+  0%, 20%, 50%, 80%, 100%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(5px);
+  }
+  60%{
+    transform: translateY(3px);
+  }
+}
