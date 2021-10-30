@@ -3,7 +3,7 @@
 🌱 I’m currently learning Programing to be better than now.<br/>
 📫 How to reach me Kittipongprasompong@gmail.com<br/>
 
-This project was created with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/).
+This project is a clone of the Tesla website, not a fully functional app, and was made solely to learn how to create a web app using [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/).
 
 ## Available Scripts
 
