@@ -19,4 +19,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-<img src'https://i.ibb.co/h2RMrtc/247690281-445283583683307-7742507061604202202-n.png'/>
+<img src'https://i.ibb.co/h2RMrtc/247690281-445283583683307-7742507061604202202-n.png'>
