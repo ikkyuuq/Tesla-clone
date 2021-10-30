@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { style } from '@mui/system';
 import { selectCars } from '../features/car/carSlice'
 import { useSelector } from 'react-redux'
 
@@ -25,10 +23,10 @@ function Header() {
             <RightMenu>
                 <a href='#'>Shop</a>
                 <a href='#'>Account</a>
-                <ButtonMenu onClick = {() => setMenuStatus(true)} href='#'>
+            </RightMenu>
+            <ButtonMenu onClick = {() => setMenuStatus(true)} href='#'>
                     Menu
                 </ButtonMenu>
-            </RightMenu>
             <NavMenu show = { menuStatus }>
                 <CloseWrapper>
                     <CloseButton onClick = {() => setMenuStatus(false)}/>
@@ -84,12 +82,16 @@ const Menu = styled.div`
 
     a{
         font-weight: 500;
-        padding: 0 10px;
+        padding: 7px 15px;
         flex-wrap: nowrap;
     }
 
     @media (max-width: 1200px){
         display: none;
+    }
+    a:hover{
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.05);
     }
 `
 
@@ -99,8 +101,18 @@ const RightMenu = styled.div`
 
     a{
         font-weight: 500;
+        padding: 7px 10px;
         margin-right: 10px;
     }
+    a:hover{
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    @media(max-width: 1200px){
+        display: none;
+    }
+
 `
 
 const ButtonMenu = styled.div`
@@ -110,9 +122,19 @@ const ButtonMenu = styled.div`
     align-items:center;
     justify-content: center;
     cursor: pointer;
-    border-radius: 100px;
-    background-color: rgba(0, 0, 0, 0.05);
     font-weight: 500;
+    :hover{
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    @media (max-width: 1200px){
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.05);
+        :hover{
+            border-radius: 100px;
+        }
+    }
 `
 
 const NavMenu = styled.div`
